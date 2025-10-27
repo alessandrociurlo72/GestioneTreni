@@ -1,0 +1,76 @@
+---
+config:
+  theme: redux
+  layout: dagre
+---
+flowchart TD
+ subgraph s1["Configuration"]
+        n1(["Topology Importer"])
+        n2["Topology Imported"]
+  end
+ subgraph s2["TMS"]
+        n3(["Capacity Plan Service"])
+        n5["TMS Capacity Plan"]
+        n6(["Operational Plan Service"])
+        n7["Operational Plan"]
+        n8(["Incident Impact Service"])
+        n10["Current Topology"]
+        n9(["Deviation Detection Service"])
+        n16["Operation Plan 1"]
+        n14(["Forecasting"])
+        n12["Forecast"]
+        n15(["Conflict Detection &amp; Resolution"])
+        n18["Proposed Solutions"]
+        n17(["Automatic Approved Service"])
+        n19["Approved Solution"]
+        n20(["Integration Layer"])
+        n21["Operational Plan Published"]
+        n22(["Operational Plan Publisher"])
+        n24@{ label: "<span style=\"font-size:11.0pt;line-height:107%;\">Train\nLinking Service</span>" }
+        n25@{ label: "<pre class=\"tw-data-text\" data-placeholder=\"Traduzione\" id=\"tw-target-text\" role=\"text\" tabindex=\"-1\" aria-label=\"Testo\" data-ved=\"2ahUKEwicquno6cSQAxUggf0HHR3sBjYQ3ewLegQIDRAV\" style=\"font-size:\"><span class=\"Y2IQFc\" lang=\"en\">train composition Service</span></pre>" }
+        n26(["Platforms Service"])
+  end
+ subgraph s3["ccs"]
+        n13(["TMS/CSS Interface Service"])
+        n23["Trains Status"]
+  end
+    C["External Topology Source"] --> n1
+    n1 --> n2
+    n2 --> n3 & n6 & n8
+    n4["External Capacity Plan Source"] --> n3
+    n3 --> n5
+    n5 --> n6
+    n6 --> n7 & n26
+    n8 --> n10
+    n11["Incidents"] --> n8
+    n7 --> n9
+    n9 --> n16
+    n16 --> n14
+    n10 --> n14 & n15
+    n14 --> n12
+    n12 --> n15
+    n15 --> n18
+    n18 --> n17
+    n17 --> n19
+    n19 --> n20
+    n20 --> n21
+    n21 --> n6 & n22
+    n22 --> n13
+    n13 --> n23
+    n23 --> n9
+    n24 --> n15
+    n25 --> n15 & n14
+    n26 --> n15
+    n2@{ shape: rect}
+    n5@{ shape: rect}
+    n7@{ shape: rect}
+    n10@{ shape: rect}
+    n16@{ shape: rect}
+    n18@{ shape: rect}
+    n19@{ shape: rect}
+    n21@{ shape: rect}
+    n24@{ shape: stadium}
+    n25@{ shape: stadium}
+    n23@{ shape: rect}
+    n4@{ shape: rect}
+    n11@{ shape: rect}

@@ -21,15 +21,15 @@ namespace GestioneTreni
             }
         }
 
-        public static void UseThread(List<Treno> treni)
+        public static void UseTask(List<Treno> treni)
         {
             Task t1 = new Task( () => LoadTreniRegionali(treni) );
             t1.Start();
 
-            Task t2 = new Task(() => LoadTreniRegionali(treni));
+            Task t2 = new Task(() => LoadTreniAV(treni));
             t2.Start();
 
-            Task t3 = new Task(() => LoadTreniRegionali(treni));
+            Task t3 = new Task(() => LoadTreniMerci(treni));
             t3.Start();
 
             t1.Wait();
@@ -37,7 +37,7 @@ namespace GestioneTreni
             t3.Wait();
         }
 
-        public static void UseTask(List<Treno> treni)
+        public static void UseThread(List<Treno> treni)
         {
             Thread t1 = new Thread(LoadTreniRegionali);
             t1.Start(treni);

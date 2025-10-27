@@ -1,0 +1,15 @@
+C:\WORK\LAB\GestioneTreni\bin\Debug\net6.0\GestioneTreni.exe
+C:\WORK\LAB\GestioneTreni\bin\Debug\net6.0\GestioneTreni.deps.json
+C:\WORK\LAB\GestioneTreni\bin\Debug\net6.0\GestioneTreni.runtimeconfig.json
+C:\WORK\LAB\GestioneTreni\bin\Debug\net6.0\GestioneTreni.dll
+C:\WORK\LAB\GestioneTreni\bin\Debug\net6.0\GestioneTreni.pdb
+C:\WORK\LAB\GestioneTreni\obj\Debug\net6.0\GestioneTreni.GeneratedMSBuildEditorConfig.editorconfig
+C:\WORK\LAB\GestioneTreni\obj\Debug\net6.0\GestioneTreni.AssemblyInfoInputs.cache
+C:\WORK\LAB\GestioneTreni\obj\Debug\net6.0\GestioneTreni.AssemblyInfo.cs
+C:\WORK\LAB\GestioneTreni\obj\Debug\net6.0\GestioneTreni.csproj.CoreCompileInputs.cache
+C:\WORK\LAB\GestioneTreni\obj\Debug\net6.0\GestioneTreni.sourcelink.json
+C:\WORK\LAB\GestioneTreni\obj\Debug\net6.0\GestioneTreni.dll
+C:\WORK\LAB\GestioneTreni\obj\Debug\net6.0\refint\GestioneTreni.dll
+C:\WORK\LAB\GestioneTreni\obj\Debug\net6.0\GestioneTreni.pdb
+C:\WORK\LAB\GestioneTreni\obj\Debug\net6.0\GestioneTreni.genruntimeconfig.cache
+C:\WORK\LAB\GestioneTreni\obj\Debug\net6.0\ref\GestioneTreni.dll
